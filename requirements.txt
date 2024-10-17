@@ -1,0 +1,10 @@
+facenet-pytorch
+hnswlib
+facenet_pytorch
+torchvision
+torch
+scikit-learn
+pandas
+matplotlib
+streamlit
+mediapipe
