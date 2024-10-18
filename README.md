@@ -32,7 +32,10 @@ Make sure you have the following libraries installed in your environment. You ca
 - Install the required packages: pip install -r requirements.txt
  
 ## Usage
-- Run the Streamlit app: streamlit run main.py
+- Run the Streamlit app: 
+```bash
+streamlit run main.py
+'''
 - Open your web browser and go to: http://localhost:8501
 - Upload an image:
 - After processing, the app will display your photo with facial landmarks and the top 3 celebrity matches.
