@@ -5,8 +5,8 @@ import os
 from utils import ImageUtils, FaceMeshProcessor, FaceNetModel, ImageFinder
 
 # Set up the title and description of the app
-st.title("Celebrity Look-alike Finder")
-st.write("Upload an image to find the top celebrity look-alikes.")
+st.title("Celeb Mirror: Who Do You Resemble?")
+st.write("Upload your photo and let’s see which stars you mirror!")
 
 # Step 1: Upload Image
 uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
@@ -47,7 +47,7 @@ if uploaded_file is not None:
             similar_images_local = image_utils.modify_paths(similar_images)
 
         # Step 5: Display a progress bar as the similar images are retrieved
-        st.write("Retrieving celebrity look-alikes...")
+        st.write("Fetching your celebrity matches...")
         progress_bar = st.progress(0)
 
         # Simulate progress over a short period (you can adjust timing)
@@ -69,6 +69,6 @@ if uploaded_file is not None:
 
                 # Assuming the celebrity name is part of the path
                 celebrity_name = similar_images_local[i].split("/")[-2]  # Get celebrity name from path
-                col.image(img, caption=f"Look like {i + 1}: {celebrity_name}", use_column_width=True)
+                col.image(img, caption=f"{i + 1}: {celebrity_name}", use_column_width=True)
             else:
                 col.write("No more matches available.")  # If fewer matches, display placeholder text
