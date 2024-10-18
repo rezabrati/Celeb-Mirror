@@ -15,16 +15,21 @@
 
 Make sure you have the following libraries installed in your environment. You can install them using `pip`:
 
-streamlit
-Pillow
-numpy
-opencv-python
-pandas
-hnswlib
-facenet-pytorch
-torch
-torchvision
-mediapipe
+- streamlit
+- Pillow
+- numpy
+- opencv-python
+- pandas
+- hnswlib
+- facenet-pytorch
+- torch
+- torchvision
+- mediapipe
+
+## Installation
+- Clone the repository: git clone <https://github.com/rezabrati/celebrity.git>
+- Create a virtual environment (optional but recommended):
+- Install the required packages: pip install -r requirements.txt
  
 ## Usage
 - Run the Streamlit app: streamlit run main.py
