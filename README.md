@@ -36,7 +36,33 @@ git clone <https://github.com/rezabrati/celebrity.git>
 ```bash
 pip install -r requirements.txt
 ```
- 
+
+## Generate Celebrity Embeddings
+
+Before running the app, you need to create a database of celebrity images and their corresponding embeddings. Follow these steps:
+
+Download celebrity images and create embeddings: The script will download images for a given list of celebrities and compute their facial embeddings using the FaceNet model.
+
+Example usage:
+```python
+from utils import EmbeddingSaver, FaceNetModel
+
+# Define your base directory for storing images
+base_directory = 'img'
+
+# Initialize the FaceNet model
+facenet_model = FaceNetModel()
+
+# Initialize EmbeddingSaver with the base directory and model
+embedding_saver = EmbeddingSaver(base_dir=base_directory, facenet_model=facenet_model)
+
+# Provide search keywords for downloading images
+search_keywords = ["Scarlett Johansson", "Tom Hanks", "Adele"]
+
+# Run the embedding generation process
+embedding_saver.run(search_keywords=search_keywords, num_images=2)
+
+```
 ## Usage
 - Run the Streamlit app: 
 ```bash
