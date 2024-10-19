@@ -8,3 +8,4 @@ pandas
 matplotlib
 streamlit
 mediapipe
+bing_image_downloader
