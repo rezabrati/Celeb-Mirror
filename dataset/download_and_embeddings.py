@@ -37,7 +37,7 @@ class EmbeddingSaver:
                 downloader.download(
                                     search_term, 
                                     limit=num_images, 
-                                    output_dir=os.path.join(self.base_dir, keyword),  # Create a subdirectory for each keyword
+                                    output_dir=self.base_dir,
                                     adult_filter_off=True, 
                                     force_replace=False, 
                                     timeout=60
