@@ -29,7 +29,7 @@ mediapipe
 ## Installation
 - Clone the repository: 
 ```bash
-git clone <https://github.com/rezabrati/celebrity.git>
+git clone <https://github.com/rezabrati/Celeb-Mirror.git>
 ```
 - Create a virtual environment (optional but recommended):
 - Install the required packages: 
